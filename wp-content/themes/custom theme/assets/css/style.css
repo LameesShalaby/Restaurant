@@ -1,0 +1,601 @@
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #1B1B1B;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position:absolute;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 100;
+}
+ .navbar-brand{
+  font: normal normal 600 32px/40px 'IBM Plex Serif' !important;
+  /* padding-left: .5em; */
+ }
+  .navbar-brand span{
+   color: red !important;
+ }
+  .header a{
+      color: #dddd !important;
+      padding: 2px;
+      font: normal normal normal 16px/25px 'IBM Plex Serif';
+      text-transform:uppercase;
+      padding-left: 2em !important;
+  }
+  .header a:hover{
+    color: #fff !important;
+  }
+   .header .active{
+     position: relative;
+     color: #fff !important;
+   }
+  .header .active:hover::before{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid red;
+    width:55% ;
+    height: 100%;
+  }
+  nav .nav-bar{
+    padding-top: 5em !important;
+  } 
+
+   @media (max-width:767px){
+    .cover .text h1{
+     font: normal normal 500 35px/45px 'IBM Plex Serif';
+     text-align: center;
+     /* padding-top: 4em; */
+    }
+    .navbar-brand{
+    padding-left: .5em;
+
+    }
+   }
+   .cover{
+     background-image: url(../img/1.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 550px;
+     width: 100%;
+     position: relative;
+     /* padding-top: ; */
+   }
+   .cover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+   background-color: rgb(0 0 0/50%);
+   }
+   .cover .text{
+     position: relative;
+     top: 11em;
+   }
+   .cover .text h1{
+    font: normal normal 500 55px/70px 'IBM Plex Serif';
+    text-transform:capitalize;
+  }
+  .cover .text p{
+    font: normal normal normal 18px/22px 'Mommy Lemon';
+    text-transform: capitalize ;
+   }
+   .restaurant{
+     padding-top: 5em !important;
+     padding-bottom: 9em;
+   }
+   .restaurant img{
+     position: relative;
+     left: -.75em;
+   }
+   .restaurant .text{
+     padding-left: 6em !important;
+   }
+   @media (max-width:767px){
+     .restaurant img{
+       left: 0;
+     }
+       .restaurant .text{
+         padding-left: 3rem !important;
+       }
+     .restaurant p{
+       width: 100% !important;
+     }
+     .restaurant{
+       padding-bottom: 3em !important;
+     }
+   }
+   .restaurant h2{
+    font: normal normal  700 28px/40px 'Dancing Script' ;
+    text-transform: capitalize;
+    color: #fff;
+   }
+   .restaurant p{
+    font: normal normal  normal 16px/24px Unna ;
+    color: #dddddd8f;
+   }
+   .restaurant .btn-outline-danger{
+    font: normal normal normal 16px/24px Unna !important;
+    /* border-width: .1em; */
+    border-radius: 0 !important;
+    text-transform:uppercase;
+    padding: .2em 1em .2em 1em;
+  }
+  @media (max-width:767px){
+    .menu{
+      padding-top: 0em !important;
+    }
+    .menu p{
+      width: 100% !important;
+    }
+  }
+
+  .menu h2{
+    font: normal normal  normal 28px/50px 'Dancing Script' ;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .menu .text1 p{
+    font: normal normal  normal 16px/26px Unna ;
+    color: #dddddd8f;
+  }
+  .menu img{
+    position: relative;
+  }
+  .menu-pic{
+    padding-top: 7em !important;
+  }
+  .menu .box{
+    padding-top: 9em !important;
+  }
+  @media (max-width:767px){
+    .menu{
+      padding-bottom: 1em !important;
+    }
+    .menu .box{
+      padding-top: 1em !important;
+    }
+    .menu-pic{
+      padding-top: 0em !important;
+    }
+    .menu img{
+      padding-top:0em;
+    }
+  }
+
+  .menu-pic h5{
+    font: normal normal  normal 22px/30px Unna ;
+    text-transform: capitalize;
+    padding-top: .75em;
+  }
+  .menu-pic p{
+    font: normal normal  normal 16px/26px Unna ;
+    color: #dddddd8f;
+    padding-top: 1em;
+  }
+  .menu-pic span{
+    font: normal normal normal 20px/30px 'Mommy Lemon';
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: rgb(233, 233, 74);
+  }
+  .menu-pic span::before{
+    content: "$";
+    font: normal normal normal 20px/30px 'Mommy Lemon';
+    color: rgb(233, 233, 74);
+    position: relative;
+}
+ .menu-pic span::after{
+    content: ".50";
+    font: normal normal normal 14px/20px 'Mommy Lemon';
+    position: relative;
+    top: -10px;
+    color: rgb(233, 233, 74);
+
+} 
+  .testimony{
+    padding-top: 120px;
+    /* padding-bottom: 120px; */
+  }
+  @media (max-width:767px){
+    .testimony{
+      padding-top: 0em !important;
+      padding-bottom: 0 !important;
+    }
+    .testimony .test{
+      width: 100% !important;
+    }
+    .testimony .text p{
+      width: 100% !important;
+    }
+    .testimony .q{
+      top: -15em !important;
+      right: 0em !important;
+    }
+  }
+  .testimony .text h2{
+    font: normal normal  700 25px/50px 'Dancing Script' ;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .testimony .text p{
+    font: normal normal  normal 16px/22px Unna ;
+    color: #dddddd8f;
+    width: 50% ;
+  }
+  .testimony .q{
+    position: relative;
+    top: -20em;
+    right: 22em;
+  }
+  .testimony q{
+    font: normal normal  normal 20px/28px Unna ;
+  }
+  .testimony p{
+    color:#dddd;
+  }
+  @media (max-width:767px){
+    .unique-menu{
+      padding-top: 0 !important;
+    }
+    .unique-menu p{
+      width: 100% !important;
+    }
+    .unique-menu .text2{
+      padding-top: 1.5em !important;
+      padding-bottom: 1em !important ;
+      padding-left: 3rem !important;
+    }
+    .unique-menu h2{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .unique-menu .p{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  .unique-menu h2{
+  font: normal normal  700 25px/50px 'Dancing Script' ;
+  text-transform: capitalize;
+  color: #fff;
+  }
+  .unique-menu p{
+    font: normal normal  normal 16px/22px Unna ;
+    color: #dddddd8f;
+    padding-top: .25em; 
+    /* width: 50%; */
+  }
+  .unique-menu h3{
+    font: normal normal  normal 25px/45px Unna ;
+    text-transform: capitalize;
+    padding-top: 2em;
+  }
+  .unique-menu .text2{
+    /* padding-top: 12em ; */
+    padding-left: 6em;
+    width: 100%;
+  }
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+      /* top: 0; */
+    /* left: -22px; */
+    text-align: end;
+    width: 100%;
+    /* bottom: 0; */
+    position: relative;
+}
+.swiper-pagination-bullet{
+  background:red;
+}
+.swiper-pagination-bullet-active{
+ background-color: #dddd;
+}
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+  .unique-menu .btn-outline-danger{
+    font: normal normal normal 16px/20px Unna !important;
+    border-width: .1em;
+    border-radius: 0 !important;
+    text-transform:uppercase;
+  }
+  .event{
+    /* padding-top: 120px; */
+    padding-bottom: 120px !important;
+  }
+  .event .card-body{
+    background-color:#202020;
+  }
+  .event h2{
+    font: normal normal  700 25px/50px 'Dancing Script' ;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .event p{
+    font: normal normal  normal 16px/22px Unna ;
+    color: #dddddd8f;
+    padding-bottom: 3em ;
+  }
+  .event h5{
+    font: normal normal  normal 25px/50px Unna ;
+    text-transform: capitalize;
+    color: #fff;
+  }
+   .event .card-text{
+    font: normal normal  normal 16px/22px Unna ;
+   }
+   .event .span{
+     padding-bottom: 1em;
+   }
+
+   .event .span span{
+    font: normal normal normal 14px/30px 'Mommy Lemon';
+   display: inline-block;
+}
+   .event .span .fa-heart,.fa-eye{
+    font-size: 12px;
+    color: #dddddd8f;
+    position: relative;
+    top: -5px;
+   }
+   .event .fa-arrow-right{
+     position:relative;
+     left: 5em;
+     color: #dddddd8f;
+     font-size: 14px;
+   }
+   .event a{
+     color: #CE0000;
+     position: relative;
+     left: 5em;
+   }
+   @media (max-width:767px){
+     .event a{
+       left: 2em;
+     }
+     .event .fa-arrow-right{
+       left: 2em;
+     }
+   }
+  .event .span span::after{
+    content: "k";
+    position: relative;
+    right: -1px;
+    font: normal normal normal 16px/30px 'Mommy Lemon';
+    padding-right: 1em;
+}
+ .book-atable{
+   background-image: url(../img/1.jpg);
+   background-size: cover;
+   background-position: center;
+   /* width: 300px; */
+   height: 400px;
+   position: relative;
+ }
+  .book-atable::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   right: 0;
+   top: 0;
+   background-color: rgb(0 0 0/50%);
+ }
+ .book-atable h2{
+  font: normal normal  700 25px/50px 'Dancing Script' ;
+  text-transform: capitalize;
+  color: #fff;
+  position: relative;
+ }
+ .book-atable p{
+  font: normal normal  normal 16px/22px Unna ;
+  color: #dddd;
+  position: relative;
+ }
+ .book-atable .btn-outline-danger{
+  font: normal normal normal 16px/20px Unna !important;
+  border-width: .1em;
+  border-radius: 0 !important;
+  text-transform:uppercase;
+  position: relative;
+}
+
+ .footer h5{
+  font: normal normal normal 15px/22px 'Mommy Lemon';
+  color: #FFF;
+  text-transform:uppercase;
+}
+@media (max-width:767px){
+ .footer h5{
+   text-align: center;
+   padding-top: 1em !important;
+ }
+}
+.footer .text,a{
+ font: normal normal normal 14px/18px 'Mommy Lemon';
+ color: #dddddd8f;
+ text-transform: capitalize;
+ text-decoration: none;
+}
+.footer p{
+  margin-bottom: 0.5rem !important;
+}
+@media (max-width:767px){
+ .footer .text,a{
+   text-align: center;
+ }
+ .footer .Links{
+  padding-left: 0 !important;
+ }
+}
+.footer{
+ font: normal normal normal 12px/15px 'Mommy Lemon';
+ letter-spacing: 0px;
+ color: #dddddd8f;
+}
+.footer .icons a {
+  color: darkred;
+  font-size: 18px;
+}
+.footer a:hover{
+    color: #fff !important;
+}
+
+
+
+
+.aos-all {
+  width: 1000px;
+  max-width: 98%;
+  margin: 50px auto;
+}
+
+.aos-item {
+  display: inline-block;
+  /* float:left; */
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+.aos-item::before {
+  content: attr(data-id);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: #1da4e2;
+  line-height: 260px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 420px) {
+  .aos-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aos-item {
+    width: 33%;
+  }
+}
+
+.aos-anchors__lines {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid red;
+}
+
+.aos-anchors__lines::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: green;
+}
+
+.aos-anchors__sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.aos-anchors__sidebar > div {
+  padding: 5px 10px;
+  background: #f1f1f1;
+}
+
+.aos-anchors__content {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.aos-anchors__content > div {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  background: #f1f1f1;
+  line-height: 300px;
+  text-align: center;
+  color: #333;
+}
+
+.aos-anchors__content > div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.aos-anchors__content > div::after {
+  content: attr(data-anchor-id);
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.aos-anchors__content > div[data-placement$="-bottom"]::before {
+  background-color: red;
+}
+
+.aos-anchors__content > div[data-placement$="-center"]::before {
+  background-color: green;
+}
+
+.aos-anchors__content > div[data-placement$="-top"]::before {
+  background-color: blue;
+}
+
+.aos-anchors__content > div[data-placement^="top-"]::before {
+  top: 0;
+}
+
+.aos-anchors__content > div[data-placement^="center-"]::before {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.aos-anchors__content > div[data-placement^="bottom-"]::before {
+  bottom: 0;
+}
